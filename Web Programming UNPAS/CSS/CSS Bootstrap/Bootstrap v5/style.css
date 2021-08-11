@@ -1,0 +1,22 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: rgb(221, 221, 221);
+}
+
+body hr {
+  width: 400px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 0;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.portfolio {
+  background-color: rgb(221, 221, 221);
+}
+
+section {
+  padding-top: 4rem;
+}

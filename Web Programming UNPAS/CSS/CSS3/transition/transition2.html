@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSITION 2</title>
+    <style>
+        .container1 {
+            border: 5px solid black;
+            margin: 40px auto;
+            width: 900px;
+        }
+        .satu {
+            width: 80px;
+            height: 80px;
+            background-color: brown;
+            transition: 1s;
+        }
+        .container1:hover .satu {
+            margin-left: 820px;
+            transform: rotate(270deg);
+            background-color: chartreuse;
+        }
+        .dua {
+            width: 80px;
+            height: 80px;
+            background-color: darkblue;
+            transition: transform 1s;
+        }
+        .container2 {
+            border: 5px solid black;
+            margin: 40px auto;
+            width: 900px;
+        }
+        .container2:hover .dua {
+            margin-left: 820px;
+            transform: rotate(270deg);
+            background-color: chartreuse;
+        }
+        .container3 {
+            border: 5px solid black;
+            margin: 40px auto;
+            width: 900px;
+        }
+        .tiga {
+            width: 80px;
+            height: 80px;
+            background-color: darkorchid;
+            transition: 2s ease-in;
+        }
+        .container3:hover .tiga {
+            margin-left: 820px;
+            transform: rotate(270deg);
+            background-color: chartreuse;
+        }
+        .container4 {
+            border: 5px solid black;
+            margin: 40px auto;
+            width: 900px;
+        }
+        .empat {
+            width: 80px;
+            height: 80px;
+            background-color: oldlace;
+            transition: 1s linear;
+        }
+        .container4:hover .empat {
+            margin-left: 820px;
+            transform: rotate(270deg);
+            background-color: chartreuse;
+        }
+        .container5 {
+            border: 5px solid black;
+            margin: 40px auto;
+            width: 900px;
+        }
+        .lima {
+            width: 80px;
+            height: 80px;
+            background-color: tomato;
+            transition: 1s cubic-bezier(.31,-0.51,.77,1.42)
+        }
+        .container5:hover .lima {
+            margin-left: 820px;
+            transform: rotate(270deg);
+            background-color: chartreuse;
+        }
+        .container6 {
+            border: 5px solid black;
+            margin: 40px auto;
+            width: 900px;
+        }
+        .enam {
+            width: 80px;
+            height: 80px;
+            background-color: violet;
+            transition: 1s 1s;
+        }
+        .container6:hover .enam {
+            margin-left: 820px;
+            transform: rotate(270deg);
+            background-color: chartreuse;
+        }
+        .container7 {
+            border: 5px solid black;
+            margin: 40px auto;
+            width: 900px;
+        }
+        .tujuh {
+            width: 80px;
+            height: 80px;
+            background-color: pink;
+            transition: margin-left 1s, transform 1s 1s, background-color 500ms 2s;
+        }
+        .container7:hover .tujuh {
+            margin-left: 820px;
+            transform: rotate(270deg);
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="satu"></div>
+    </div>
+    <div class="container2">
+        <div class="dua"></div>
+    </div>
+    <div class="container3">
+        <div class="tiga"></div>
+    </div>
+    <div class="container4">
+        <div class="empat"></div>
+    </div>
+    <div class="container5">
+        <div class="lima"></div>
+    </div>
+    <div class="container6">
+        <div class="enam"></div>
+    </div>
+    <div class="container7">
+        <div class="tujuh"></div>
+    </div>
+</body>
+</html>

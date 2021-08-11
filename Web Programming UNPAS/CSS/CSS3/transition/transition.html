@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        /* body {
+            margin: 0;
+            padding: 0;
+        } */
+        .satu {
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            margin: 20px;
+            transition: .5s;
+        }
+
+        .satu:hover {
+            transform: rotate(45deg);
+        }
+        .dua {
+            width: 300px;
+            height: 300px;
+            background-color: cadetblue;
+            margin: 20px;
+            transition: .5s;
+        }
+        
+        .contain:hover .dua {
+            transform: rotate(45deg);
+            margin-left: 600px;
+        }
+        
+        .tiga {
+            width: 300px;
+            height: 300px;
+            background-color: darkcyan;
+            transition: .5s;
+        }
+        .contain2 {
+            border: 2px solid black;
+            height: 300px;
+        }
+
+        .contain2:hover .tiga {
+            transform: rotate(45deg);
+            margin-left: 600px;
+        }
+
+        .contain3 {
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+        }
+        .empat {
+            width: 300px;
+            display: inline-block;
+            height: 300px;
+            background-color: coral;
+            transition: margin-left 0.9s;
+        }
+
+        .contain3:hover .empat {
+            margin-left: 900px;
+            transform: rotate(45deg);
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="satu"></div>
+    <div class="contain">
+        <div class="dua"></div>
+    </div>  
+    <div class="contain2"></div>  
+        <div class="tiga"></dv>
+    </div>  
+    <div class="contain3">
+        <div class="empat"></div>
+    
+</body>
+</html>

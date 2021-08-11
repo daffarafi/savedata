@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/bg.png');
+    background-position: left;
+    background-size: cover;
+    padding: 0% 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.nav {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.nav nav {
+    flex: 2;
+    margin-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+.cart {
+    width: 70px;
+}
+
+.nav nav a {
+    text-decoration: none;
+    color: rgb(38, 13, 48);
+    margin: 5px 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content h1 {
+    font: normal 55px/74px LibreBaskerville, serif;
+    margin: 24px 0px 15px;
+    color: rgb(61, 18, 102);
+}
+
+.content p {
+    font: normal 18px LibreBaskerville, serif;
+    margin: 24px 0px 15px;
+    color: rgb(49, 96, 139);
+}
+
+.content {
+    margin: 7% 0 0 10%;
+    position: relative;
+    z-index: 9;
+}
+
+.content .collect {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(45deg, rgb(128, 198, 255), violet, rgb(255, 183, 255));
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 3px 3px 22px rgb(26, 26, 26, .2);
+}
+.content .arrow {
+    margin-top: 26px;
+    display: flex;
+    height: 8%;
+}
+
+.arrow img {
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.featured {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 10%;
+    width: auto;
+    height: 90vh;
+    opacity: 60%;
+}
+
+.featured img {
+    height: 100%;
+}
+
+.sosmed {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 200px;
+}
+
+.sosmed a {
+    font-size: 16px;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('LibreBaskerville-Regular.ttf') format('truetype')
+}

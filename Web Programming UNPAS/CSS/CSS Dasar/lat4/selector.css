@@ -1,0 +1,27 @@
+h1 {
+	color: green;
+}
+
+ol li a {
+	color: red;
+}
+
+ol ul li a {
+	color: yellow;
+}
+
+#p1, #p2 {
+	color: cyan;
+}
+
+.judul {
+	color: blue;
+}
+
+.subjudul {
+	color: brown;
+}
+
+#sorotan {
+	color: pink;
+}

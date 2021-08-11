@@ -1,0 +1,73 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background-color: violet;
+            }
+
+            .head {
+                width: 400px;
+                height: 400px;
+                background-color: rgb(230, 230, 230);
+                border-radius: 100%;
+                margin: 50px auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .eyes {
+                position: relative;
+                top: -20px;
+                display: flex;
+            }
+
+            .eyes .eye {
+                position: relative;
+                background: white;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin: 0px 20px;
+                /* transform: rotate(-45deg); */
+            }
+
+            .eyes .eye::before {
+                content: "";
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, -110%);
+                background-color: black;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
+        </div>
+        <script>
+            window.addEventListener("mousemove", () => {
+                let eye = document.querySelectorAll(".eye");
+                eye.forEach(function (e) {
+                    let x = e.getBoundingClientRect().left + e.clientWidth / 2;
+                    let y = e.getBoundingClientRect().top + e.clientHeight / 2;
+                    let radian = Math.atan2(event.pageX - x, event.pageY - y);
+                    let rot = radian * (180 / Math.PI) * -1;
+                    // console.log(event.pageY);
+                    e.style.transform = `rotate(${rot}deg)`;
+                });
+            });
+        </script>
+    </body>
+</html>

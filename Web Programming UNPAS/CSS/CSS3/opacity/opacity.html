@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Opacity</title>
+    <style>
+        .satu {
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+            opacity: 50%;
+            position: relative;
+            display: inline-block;
+        }
+
+        .dua {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            opacity: 50%;
+
+        }
+        .satu2 {
+            width: 400px;
+            height: 400px;
+            background-color: rgba(144, 233, 111, 0.5);
+            opacity: 50%;
+            position: relative;
+            display: inline-block;
+        }
+
+        .dua2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+        }
+
+        body {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="satu">
+        <div class="dua"></div>
+    </div>
+    <div class="satu2">
+        <div class="dua2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min & Max Content</title>
+    <style>
+        html, body {
+            background-color: #ddd;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 2px solid white;
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: 100px min-content max-content;
+            grid-template-rows: repeat(3, 100px);
+            
+        }
+
+        .item {
+            background-color: rgb(255, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .item:nth-child(even) {
+            background-color: rgb(25, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+</html>

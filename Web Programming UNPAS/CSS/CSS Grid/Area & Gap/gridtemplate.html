@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template</title>
+    <style>
+        html, body {
+            background-color: #ddd;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 2px solid white;
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-areas: 
+            "header header header"
+            "sidebar sidebar sidebar"
+            "content content content"
+            "footer footer footer";
+            
+        }
+
+        .item {
+            background-color: rgb(255, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        /* .item:nth-child(even) {
+            background-color: rgb(25, 0, 255);
+        } */
+
+        .header {
+            background-color: chartreuse;
+            grid-area: header;
+        }
+
+        .content {
+            background-color: crimson;
+            grid-area: content;
+        }
+
+        .sidebar {
+            background-color: darkgray;
+            grid-area: sidebar;
+        }
+
+        .footer {
+            background-color: indigo;
+            grid-area: footer;
+        }
+
+        @media screen and (min-width: 576px) {
+            .container {
+                grid-template-areas: 
+                    "header header header"
+                    "sidebar content content"
+                    "sidebar content content"
+                    "footer footer footer";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item sidebar">Sidebar</div>
+        <div class="item content">Content</div>
+        <div class="item footer">Footer</div>
+        <!-- <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div> -->
+    </div>
+</body>
+</html>

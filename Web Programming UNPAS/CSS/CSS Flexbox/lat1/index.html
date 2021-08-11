@@ -1,0 +1,273 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: bisque;
+            font-family: arial;
+            line-height: 1.5;
+        }
+
+        .container1 {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 5px 25px;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .sideleft {
+            order: 1;
+            flex: 1;
+        }
+
+        .main {
+            order: 2;
+            flex: 3;
+        }
+
+        .sideright {
+            order: 3;
+            flex:1;
+        }
+
+        .container2 {
+            max-width: 80%;
+            margin: 50px auto;
+            
+        }
+
+        .layanan {
+
+            padding: 5%;
+            box-sizing: border-box;
+            margin-bottom: 25px;
+        }
+
+        .layanan.satu {
+            background-color: rgb(189, 245, 239);
+        }
+        .layanan.dua {
+            background-color: rgb(245, 189, 189);
+        }
+        .layanan.tiga {
+            background-color: rgb(189, 245, 194);
+        }
+        .layanan.empat {
+            background-color: rgb(245, 189, 240);
+        }
+        .layanan.lima {
+            background-color: rgb(239, 245, 189);
+        }
+
+        .container3 {
+            width: 80%;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .thumbnail {
+            width:  40%;
+            margin: 20px 0;
+        }
+
+        .thumbnail img {
+            width: 100%;
+        }
+
+
+        .container4 {
+            width: 80%;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            border: 1px solid rgb(66, 66, 66);
+            border-radius: 7px;
+            background-color: rgb(240, 240, 240);
+            overflow: hidden;
+            margin: 10px;
+            width: 30%;
+        }
+
+        .card.besar {
+            transform: scale(1.1);
+        }
+
+        .card .header {
+            height: 150px;
+            background-color: grey;
+        }
+
+        .card .content {
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .container5 {
+            height: 400px;
+            width: 400px;
+            margin: 50px auto;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .kotak {
+            width: 90px;
+            height: 90px;
+            background-color: coral;
+            margin: auto;
+            display: flex;
+        }
+
+        .kotak .text {
+            margin: auto;
+            text-align: center;
+            color: white;
+        }
+
+        @media(min-width: 800px) {
+            .container2 {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .layanan {
+                width: 30%;
+                padding: 1%;
+                margin: 25px 1%;
+            }
+            
+            .thumbnail {
+                width: 30%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="main">
+            <h2 class="judul">INI SEBUAH JUDUL</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nesciunt omnis similique qui deserunt earum, minus quae itaque consequatur eaque in illo! Delectus porro debitis quisquam sit odio at iste sed. Maiores unde odio quia.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, rerum voluptatum, quaerat facilis, iste totam nesciunt impedit enim a voluptas ipsam pariatur vero excepturi mollitia in unde accusantium consectetur? Dignissimos debitis pariatur tempora odio reiciendis, eaque enim non sapiente aliquam officia consequatur impedit ex quos iure quibusdam, repellat asperiores ipsa aperiam? Dolor reprehenderit a fugiat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores alias perspiciatis porro doloribus praesentium laudantium dolores, optio non ipsa eligendi.</p>
+        </div>
+        <div class="sideleft">
+            <h3>Sidebar</h3>
+            <ul>
+                <li><a href="">link 1</a></li>
+                <li><a href="">link 2</a></li>
+                <li><a href="">link 3</a></li>
+                <li><a href="">link 4</a></li>
+                <li><a href="">link 5</a></li>
+            </ul>
+        </div>
+        <div class="sideright">
+            <h3> Sidebar</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vitae, nesciunt sit veniam maiores dolores neque accusamus aliquid iure illum?</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="layanan satu">
+            <h4>Bakso Bulat</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, unde minus debitis neque ab, commodi quis, mollitia consectetur labore a placeat facere omnis modi facilis.</p>
+        </div>
+        <div class="layanan dua">
+            <h4>Bakso Gepeng</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, unde minus debitis neque ab, commodi quis, mollitia consectetur labore a placeat facere omnis modi facilis.</p>
+        </div>
+        <div class="layanan tiga">
+            <h4>Bakso Tusuk</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, unde minus debitis neque ab, commodi quis, mollitia consectetur labore a placeat facere omnis modi facilis.</p> 
+        </div>
+        <div class="layanan empat">
+            <h4>Bakso Mercon</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, unde minus debitis neque ab, commodi quis, mollitia consectetur labore a placeat facere omnis modi facilis.</p> 
+        </div>
+        <div class="layanan lima">
+            <h4>Bakso Bakar</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, unde minus debitis neque ab, commodi quis, mollitia consectetur labore a placeat facere omnis modi facilis.</p> 
+        </div>
+    </div>
+    <div class="container3">
+        <div class="thumbnail">
+            <img src="1.jpg" alt="">
+        </div>
+        <div class="thumbnail">
+            <img src="2.jpg" alt="">
+        </div>
+        <div class="thumbnail">
+            <img src="3.jpg" alt="">
+        </div>
+        <div class="thumbnail">
+            <img src="4.jpg" alt="">
+        </div>
+        <div class="thumbnail">
+            <img src="5.jpg" alt="">
+        </div>
+        <div class="thumbnail">
+            <img src="6.jpg" alt="">
+        </div>
+    </div>
+    <div class="container4">
+        <div class="card">
+            <div class="header"></div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente repellat cum nemo!</p>
+                <button>Buy Now!</button>
+            </div>
+        </div>
+        <div class="card besar">
+            <div class="header"></div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente repellat cum nemo!</p>
+                <button>Buy Now!</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header"></div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente repellat cum nemo!</p>
+                <button>Buy Now!</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header"></div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente repellat cum nemo!</p>
+                <button>Buy Now!</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header"></div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente repellat cum nemo!</p>
+                <button>Buy Now!</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header"></div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente repellat cum nemo!</p>
+                <button>Buy Now!</button>
+            </div>
+        </div>
+    </div>
+    <div class="container5">
+        <div class="kotak"><div class="text">Hello World! Hello World!</div></div>
+    </div>
+</body>
+</html>

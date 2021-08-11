@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Box Shadow</title>
+    <style>
+        body {
+            width: 1500px
+        }
+
+        .satu {
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+            margin: 20px auto;
+            box-shadow: 20px 5px 2px rgba(0, 0, 0, 0.7);
+        }
+        .dua {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            margin: 20px auto;
+            box-shadow: 20px 5px 2px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .tiga {
+            width: 300px;
+            height: 300px;
+            background-color: chartreuse;
+            margin: 50px auto;
+            box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 1);
+        }
+        .empat {
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+            margin: 50px auto;
+            box-shadow: 0px 30px 15px -20px rgba(0, 0, 0, 1);
+        }
+        .lima {
+            width: 300px;
+            height: 300px;
+            background-color: mediumvioletred;
+            box-shadow: 0px 30px 15px -20px rgba(0, 0, 0, 1);
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            transition: .3s;
+
+        }
+        .lima:hover {
+            width: 320px;   
+            height: 320px; 
+            top: 70px; 
+            left: 90px; 
+            box-shadow: 0px 65px 15px -40px rgba(0, 0, 0, 0.4);
+        }
+        .enam {
+            width: 300px;
+            height: 300px;
+            background-color: tan;
+            margin: 50px auto;
+            box-shadow: inset 0px 0px 15px 45px rgba(0, 0, 0, .75);
+        }
+        .tujuh {
+            width: 300px;
+            height: 300px;
+            background-color: peru;
+            margin: 50px auto;
+            box-shadow: 15px 15px 9px 0px rgba(0, 0, 0, .75), 
+            -15px -15px 9px 0px  rgba(1, 255, 99, 0.75);
+        }
+    </style>
+</head>
+<body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+    <div class="empat"></div>
+    <div class="lima"></div>
+    <div class="enam"></div>
+    <div class="tujuh"></div>
+</body>
+</html>

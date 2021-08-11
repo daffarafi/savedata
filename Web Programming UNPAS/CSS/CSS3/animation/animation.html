@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Animation</title>
+    <style>
+        .satu {
+            width: 150px;
+            height: 150px;
+            background-color: aquamarine;
+            transition: .5s;
+        }
+        .satu:hover {
+            width: 250px;
+            height: 250px;
+        }
+        .dua {
+            width: 150px;
+            height: 150px;
+            background-color: burlywood;
+        }
+        .dua:hover {
+            animation: animasiSatu 1s;
+        }
+        .tiga {
+            width: 150px;
+            height: 150px;
+            background-color: darkslategrey;
+        }
+        .tiga:hover {
+            animation: animasiDua 1s;
+        }
+        .empat {
+            width: 150px;
+            height: 150px;
+            background-color: fuchsia;
+            animation: animasiDua 1s;
+        }
+
+        .lima {
+            width: 150px;
+            height: 150px;
+            background-color: greenyellow;
+            animation: animasiDua 1s 3;
+        }
+        .enam {
+            width: 150px;
+            height: 150px;
+            background-color: lime;
+            animation: animasiDua 1s infinite;
+        }
+        .tujuh {
+            width: 150px;
+            height: 150px;
+            background-color: mediumseagreen;
+            animation-name: animasiDua;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        .delapan {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            animation: animasiDua 1s infinite reverse;
+        }
+        .sembilan {
+            width: 150px;
+            height: 150px;
+            background-color: sienna;
+            animation: animasiDua 1s infinite alternate;
+        }
+
+        .sepuluh {
+            width: 150px;
+            height: 150px;
+            background-color: tan;
+        }
+        .sepuluh:hover {
+            animation: animasiDua 1s 3 alternate forwards;
+        }
+
+        @keyframes animasiSatu{
+            from {
+                
+            }
+            to {
+                width: 250px;
+                height: 300px;
+            }
+        }
+        @keyframes animasiDua{
+            0% {
+                
+            }
+
+            50% {
+                width: 120px;
+            }
+
+            100% {
+                width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+    <div class="empat"></div>
+    <div class="lima"></div>
+    <div class="enam"></div>
+    <div class="tujuh"></div>
+    <div class="delapan"></div>
+    <div class="sembilan"></div>
+    <div class="sepuluh"></div>
+</body>
+</html>
